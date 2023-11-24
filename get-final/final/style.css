@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+  margin: o;
+  padding: 0;
+}
+/* .container {
+  max-width: 1050px;
+} */
+body{
+  background-color: #343a40;
+}
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+ a.btn.btn-outline-secondary:hover {
+  background-color: #a183b8;
+}
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 10%;
+  background-color: #e5e5e5;
+}
+h5 {font-size: medium;}
+.pb-1, .py-1 {
+  padding-bottom: 1rem!important;
+}
+.pt-1, .py-1 {
+  padding-top: 1rem!important;
+}
+@media (min-width: 768px){
+  .pt-md-5, .py-md-5 {
+    padding-top: 1rem!important;
+}
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+ul.list-unstyled.text-small {
+  padding-top: 10px;
+}
+.overflow-hidden { overflow: hidden; }
+
+/*****************************************************/
+::before {
+  background-image:url(./picture/hinh1.png);
+}
+.position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-light {
+  background-image: url(./picture/hinh2.jpg);
+}
+.position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-light {
+  color: white;
+}
+a.btn.btn-outline-secondary {
+  color: white;
+  border: solid;
+}
+a.py-2.d-none.d-md-inline-block {
+  font-size: 20px;
+  font-family: system-ui;
+  height: 100%;
+}
+.bg-light.mr-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden {
+  border-radius: 20px;
+}
+.text-muted {
+  color: #e9f5ff!important;
+}
+img.mySlides {
+  width: 1000px;
+  height: 500px;
+  border-radius: 1rem;
+}
+.w3-content.w3-section {
+  display: table;
+}
+.row {
+  flex-wrap: nowrap;
+}
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 385px;
+  height: 300px;
+}
+.col {
+  padding: 10px;
+  top: 20px;
+  display: contents;
+}
+a.btn.btn-outline-secondary:hover {
+  background-color: #343a40;
+}
+.bg-white.shadow-sm.mx-auto.class1 {
+  background-image: url(./picture/yoko_osen.jpg);
+}
+.bg-primary {
+  background-color: #343a40!important;
+}
+.bg-light.shadow-sm.mx-auto.class1 {
+  background-image: url(./picture/the_art.jpg);
+}
+.bg-dark.shadow-sm.mx-auto.class1 {
+  background-image: url(./picture/manor_central_park.jpg);
+}
+.bg-dark.shadow-sm.mx-auto.class2 {
+  background-image: url(./picture/alpha_hill.png);
+}
+.bg-light.shadow-sm.mx-auto.class2 {
+  background-image: url(./picture/welltone_luxury_residence.jpg);
+}
+.bg-white.shadow-sm.mx-auto.class2 {
+  background-image: url(./picture/emaar_beachfront.gif);
+}
+.bg-white.shadow-sm.mx-auto.class3 {
+  background-image: url(./picture/the_rosemont.jpg);
+}
+.bg-white.shadow-sm.mx-auto.class4 {
+  background-image: url(./picture/iris_garden.jpg);
+}
+.container.d-flex.flex-column.flex-md-row.justify-content-between {
+  align-items: center;
+}
+
+nav.site-header.sticky-top.py-1 {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer.footer.py-5 {
+    padding-left: 135px;
+}
+
+a.btn.btn-outline-secondary:hover {
+    background-color: #a485b9;
+}
+
+.logo img {
+  object-fit: none;
+  height: fit-content;
+  width: 100%;
+}
+
+
+/* set animation cho homePage */
+
+.hidden {
+  opacity: 0;
+  transition: all 0.5s;
+  filter: blur(5px);
+}
+
+.left {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+
+.right {
+  filter: blur(5px);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}

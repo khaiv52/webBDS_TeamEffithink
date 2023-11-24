@@ -1,0 +1,31 @@
+.newspaper {
+  display: grid;
+  width: 500px;
+}
+body {
+  justify-content: center;
+  display: grid;
+  background-color: #c5daed;
+}
+h2{
+  text-align: center;
+}
+.button {
+  border: none;
+  background-color: #7ca6cb;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button.button {
+  margin: 20px;
+  width: 230px;
+}
+.sumit {
+    margin: -20px;
+    display: flex;
+    justify-content: center;
+}
